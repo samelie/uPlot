@@ -432,6 +432,7 @@ export const ySeriesOpts = {
 	alpha: 1,
 	points: {
 		show: seriesPoints,
+		showCircle: true,
 	//	stroke: "#000",
 	//	fill: "#fff",
 	//	width: 1,

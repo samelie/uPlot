@@ -803,6 +803,7 @@ const ySeriesOpts = {
 	alpha: 1,
 	points: {
 		show: seriesPoints,
+		showCircle: true,
 	//	stroke: "#000",
 	//	fill: "#fff",
 	//	width: 1,
@@ -1536,7 +1537,9 @@ function uPlot(opts, data, then) {
 				let y = round(getYPos(data[si][pi], scales[s.scale],   plotHgt, plotTop));
 
 				path.moveTo(x + rad, y);
-				path.arc(x, y, rad, 0, PI * 2);
+				if (p.showCircle) {
+					path.arc(x, y, rad, 0, PI * 2);
+				}
 			}
 		}
 
